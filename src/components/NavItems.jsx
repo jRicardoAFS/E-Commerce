@@ -38,20 +38,29 @@ const NavItems = () => {
                                 </Link>
                             </div>
 
-                           
+
                         </div>
                         <div className="menu-area">
-                                <div className="menu">
-                                    <ul className={`lab-ul ${menuToggle ? "active" : ""}`}>
-                                        <li><Link to="/" >Home</Link></li>
-                                        <li><Link to="/shop" >Shop</Link></li>
-                                        <li><Link to="/blog" >Blog</Link></li>
-                                        <li><Link to="/about" >About</Link></li>
-                                        <li><Link to="/contact" >Contact</Link></li>
-                                    </ul>
-                                    <Link></Link>
-                                </div>
+                            <div className="menu">
+                                <ul className={`lab-ul ${menuToggle ? "active" : ""}`}>
+                                    <li><Link to="/" >Home</Link></li>
+                                    <li><Link to="/shop" >Shop</Link></li>
+                                    <li><Link to="/blog" >Blog</Link></li>
+                                    <li><Link to="/about" >About</Link></li>
+                                    <li><Link to="/contact" >Contact</Link></li>
+                                </ul>
                             </div>
+                            <Link to="sing-up" className='lab-btn me-3 d-none d-md-block'>Criar Conta</Link>
+                            <Link to="login" className='d-none d-md-block'>Entrar</Link>
+
+                            <div onClick={()=> setMenuToggle(!menuToggle)} className={`header-bar d-lg-none ${menuToggle ? "active" : ""}`}>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            
+                        </div>
                     </div>
                 </div>
             </div>
