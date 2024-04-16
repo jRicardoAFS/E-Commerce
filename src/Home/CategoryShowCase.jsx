@@ -79,6 +79,10 @@ const ProductData = [
 
 const CategoryShowCase = () => {
     const [items, setItems] = useState(ProductData)
+
+    const filterItem = () => {
+
+    }
     return (
 
         <div className='course-section style-3 padding-tb'>
@@ -89,7 +93,23 @@ const CategoryShowCase = () => {
                 <img src="/src/assets/images/shape-img/icon/02.png" alt="" />
             </div>
 
-            
+            <div className="container">
+                <div className="section-header">
+                    <h2 className="title">{title}</h2>
+                    <div className='course-filter-group'>
+                        <ul className="lab-ul">
+                            <li onClick={() => filterItem("All")}>All</li>
+                            <li onClick={() => filterItem("Shoes")}>Shoes</li>
+                            <li onClick={() => filterItem("Bags")}>Bags</li>
+                            <li onClick={() => filterItem("Phones")}>Phones</li>
+                            <li onClick={() => filterItem("Beauty")}>Beauty</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                
+            </div>
         </div>
     )
 
