@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 import productData from '../products.json'
 import { Link } from 'react-router-dom';
+import SelectedCategory from '../components/SelectedCategory';
 
 const title = (
     <h2>Search Your One From <span>Thousand</span> of Products</h2>
 )
-const description = "Temos a maior coleção de produtos"
+const description = "We have the largest collection of products"
 const bannerList = [
     {
         iconName: "icofont-users-alt-4",
@@ -37,7 +38,8 @@ const Banner = () => {
             <div className="container">
                 <div className="banner-content">
                     {title}
-                    <form action="">
+                    <form>
+                        <SelectedCategory select={"all"}/>
                         <input
                             type="text"
                             name='search'
