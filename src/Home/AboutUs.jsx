@@ -59,7 +59,7 @@ const AboutUs = () => {
                             <div className="instructor-content">
                                 <span className="subtitle">{subTitle}</span>
                                 <h2 className="title">{title}</h2>
-                                <p>description</p>
+                                <p>{description}</p>
                                 <Link to='sign-up' className="lab-btn">{btnText}</Link>
                             </div>
                         </div>
